@@ -1,4 +1,6 @@
-public class Trumpet {
+import behaviours.IPlay;
+
+public class Trumpet implements IPlay {
     private String make;
     private String model;
     private String key;
