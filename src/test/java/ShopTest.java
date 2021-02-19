@@ -24,5 +24,10 @@ public class ShopTest {
     }
 
     @Test
-    public
+    public void canRemoveFromStock(){
+        shop.addToStock(guitarStrings);
+        shop.addToStock(guitar);
+        shop.removeFromStock(guitarStrings);
+        assertEquals(1, shop.getStockCount());
+    }
 }
