@@ -1,22 +1,11 @@
 import behaviours.IPlay;
 
-public class Violin implements IPlay {
-    private String make;
-    private String model;
+public class Violin extends OrchestralInstrument implements IPlay {
     private String size;
 
     public Violin(String make, String model, String size) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.size = size;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public String getSize() {

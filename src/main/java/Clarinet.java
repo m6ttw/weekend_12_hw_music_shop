@@ -1,24 +1,13 @@
 import behaviours.IPlay;
 
-public class Clarinet implements IPlay {
-    private String make;
-    private String model;
+public class Clarinet extends OrchestralInstrument implements IPlay {
     private String typeOfWood;
     private String key;
 
     public Clarinet(String make, String model, String typeOfWood, String key) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.typeOfWood = typeOfWood;
         this.key = key;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public String getTypeOfWood() {
