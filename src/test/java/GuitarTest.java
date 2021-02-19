@@ -15,20 +15,29 @@ public class GuitarTest {
     public void hasMake(){
         assertEquals("Fender", guitar.getMake());
     }
+
     @Test
     public void hasModel(){
         assertEquals("Stratocaster", guitar.getModel());
     }
+
     @Test
     public void hasNumOfStrings(){
         assertEquals(6, guitar.getNumOfStrings());
     }
+
     @Test
     public void hasScaleLength(){
         assertEquals(25.5, guitar.getScaleLength(), 0.01);
     }
+    
     @Test
     public void hasBodyShape(){
         assertEquals("double cutaway", guitar.getBodyShape());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Guitar is being played", guitar.play("Guitar"));
     }
 }

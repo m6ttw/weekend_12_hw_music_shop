@@ -1,4 +1,6 @@
-public class Guitar {
+import behaviours.IPlay;
+
+public class Guitar implements IPlay {
     private String make;
     private String model;
     private int numOfStrings;
@@ -31,5 +33,9 @@ public class Guitar {
 
     public String getBodyShape() {
         return bodyShape;
+    }
+
+    public String play(String instrument){
+        return instrument + " is being played";
     }
 }
