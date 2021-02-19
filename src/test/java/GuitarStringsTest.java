@@ -9,9 +9,13 @@ public class GuitarStringsTest {
 
     @Before
     public void before(){
-        guitarStrings = new GuitarStrings(6, 10);
+        guitarStrings = new GuitarStrings("Ernie Ball", 6, 10);
     }
 
+    @Test
+    public void canGetMake(){
+        assertEquals("Ernie Ball", guitarStrings.getMake());
+    }
     @Test
     public void canGetNumOfStringsInPack(){
         assertEquals(6, guitarStrings.getNumStringsInPack());
