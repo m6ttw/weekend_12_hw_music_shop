@@ -1,3 +1,5 @@
+package instrument;
+
 public abstract class Instrument {
     private String make;
     private String model;

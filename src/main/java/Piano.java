@@ -1,4 +1,5 @@
 import behaviours.IPlay;
+import instrument.Instrument;
 
 public class Piano extends Instrument implements IPlay {
     private String keyMaterial;

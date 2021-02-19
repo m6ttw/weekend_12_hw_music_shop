@@ -1,4 +1,7 @@
+package orchestralinstruments;
+
 import behaviours.IPlay;
+import orchestralinstruments.OrchestralInstrument;
 
 public class Trumpet extends OrchestralInstrument implements IPlay {
     private String key;

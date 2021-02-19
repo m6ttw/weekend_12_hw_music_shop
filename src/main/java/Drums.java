@@ -1,4 +1,5 @@
 import behaviours.IPlay;
+import instrument.Instrument;
 
 public class Drums extends Instrument implements IPlay {
     private int numOfPieces;

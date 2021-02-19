@@ -1,3 +1,4 @@
+import orchestralinstruments.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -38,6 +39,6 @@ public class ClarinetTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Clarinet is being played. ~Woo woo~", clarinet.play("Clarinet", "~Woo woo~"));
+        assertEquals("orchestralinstruments.Clarinet is being played. ~Woo woo~", clarinet.play("orchestralinstruments.Clarinet", "~Woo woo~"));
     }
 }

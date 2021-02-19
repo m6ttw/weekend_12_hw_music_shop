@@ -1,4 +1,8 @@
-public abstract class OrchestralInstrument extends Instrument {
+package orchestralinstruments;
+
+import instrument.Instrument;
+
+public abstract class OrchestralInstrument extends Instrument{
     private String orchestralFamily;
 
     public OrchestralInstrument(String make, String model, String orchestralFamily) {
