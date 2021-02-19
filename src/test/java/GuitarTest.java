@@ -40,4 +40,9 @@ public class GuitarTest {
     public void canPlay(){
         assertEquals("Guitar is being played. ~Bring bring~", guitar.play("Guitar", "~Bring bring~"));
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(500, guitar.calculateMarkup(500, 1000));
+    }
 }

@@ -41,4 +41,9 @@ public class ClarinetTest {
     public void canPlay(){
         assertEquals("orchestralinstruments.Clarinet is being played. ~Woo woo~", clarinet.play("orchestralinstruments.Clarinet", "~Woo woo~"));
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(250, clarinet.calculateMarkup(150, 400));
+    }
 }
