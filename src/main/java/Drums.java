@@ -12,7 +12,7 @@ public class Drums extends Instrument implements IPlay {
         return numOfPieces;
     }
 
-    public String play(String instrument){
-        return instrument + " are being played. ~Dum dum kah dum duun duun doon doon duhn duhn duhn duhn~";
+    public String play(String instrument, String noise){
+        return instrument + " are being played. " + noise;
     }
 }

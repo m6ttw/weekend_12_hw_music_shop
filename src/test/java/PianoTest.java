@@ -33,6 +33,6 @@ public class PianoTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Piano is being played. ~Dun dun dun~", piano.play("Piano"));
+        assertEquals("Piano is being played. ~Dun dun dun~", piano.play("Piano", "~Dun dun dun~"));
     }
 }

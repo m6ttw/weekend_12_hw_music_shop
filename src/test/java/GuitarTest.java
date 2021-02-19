@@ -38,6 +38,6 @@ public class GuitarTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Guitar is being played. ~Bring bring~", guitar.play("Guitar"));
+        assertEquals("Guitar is being played. ~Bring bring~", guitar.play("Guitar", "~Bring bring~"));
     }
 }

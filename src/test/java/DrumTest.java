@@ -28,6 +28,6 @@ public class DrumTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Drums are being played. ~Dum dum kah dum duun duun doon doon duhn duhn duhn duhn~", drums.play("Drums"));
+        assertEquals("Drums are being played. ~Dum dum kah dum duun duun doon doon duhn duhn duhn duhn~", drums.play("Drums", "~Dum dum kah dum duun duun doon doon duhn duhn duhn duhn~"));
     }
 }

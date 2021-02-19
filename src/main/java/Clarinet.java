@@ -18,7 +18,7 @@ public class Clarinet extends OrchestralInstrument implements IPlay {
         return key;
     }
 
-    public String play(String instrument){
-        return instrument + " is being played. ~Woo woo~";
+    public String play(String instrument, String noise){
+        return instrument + " is being played. " + noise;
     }
 }

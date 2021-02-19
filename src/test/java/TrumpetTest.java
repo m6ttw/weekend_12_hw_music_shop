@@ -33,6 +33,6 @@ public class TrumpetTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Trumpet is being played. ~Toot toot~", trumpet.play("Trumpet"));
+        assertEquals("Trumpet is being played. ~Toot toot~", trumpet.play("Trumpet", "~Toot toot~"));
     }
 }

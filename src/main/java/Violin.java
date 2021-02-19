@@ -12,7 +12,7 @@ public class Violin extends OrchestralInstrument implements IPlay {
         return size;
     }
 
-    public String play(String instrument){
-        return instrument + " is being played, badly. ~SCREEEEEECH~";
+    public String play(String instrument, String noise){
+        return instrument + " is being played, badly. " + noise;
     }
 }

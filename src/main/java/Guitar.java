@@ -24,7 +24,7 @@ public class Guitar extends Instrument implements IPlay {
         return bodyShape;
     }
 
-    public String play(String instrument){
-        return instrument + " is being played. ~Bring bring~";
+    public String play(String instrument, String noise){
+        return instrument + " is being played. " + noise;
     }
 }

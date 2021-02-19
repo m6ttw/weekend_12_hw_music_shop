@@ -18,7 +18,7 @@ public class Piano extends Instrument implements IPlay {
         return size;
     }
 
-    public String play(String instrument){
-        return instrument + " is being played. ~Dun dun dun~";
+    public String play(String instrument, String noise){
+        return instrument + " is being played. " + noise;
     }
 }

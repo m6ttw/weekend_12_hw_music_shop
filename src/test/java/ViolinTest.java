@@ -33,6 +33,6 @@ public class ViolinTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Violin is being played, badly. ~SCREEEEEECH~", violin.play("Violin"));
+        assertEquals("Violin is being played, badly. ~SCREEEEEECH~", violin.play("Violin", "~SCREEEEEECH~"));
     }
 }

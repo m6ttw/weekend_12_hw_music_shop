@@ -38,6 +38,6 @@ public class ClarinetTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Clarinet is being played. ~Woo woo~", clarinet.play("Clarinet"));
+        assertEquals("Clarinet is being played. ~Woo woo~", clarinet.play("Clarinet", "~Woo woo~"));
     }
 }

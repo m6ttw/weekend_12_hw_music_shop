@@ -12,7 +12,7 @@ public class Trumpet extends OrchestralInstrument implements IPlay {
         return key;
     }
 
-    public String play(String instrument){
-        return instrument + " is being played. ~Toot toot~";
+    public String play(String instrument, String noise){
+        return instrument + " is being played. " + noise;
     }
 }
