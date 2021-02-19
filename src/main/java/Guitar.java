@@ -36,6 +36,6 @@ public class Guitar implements IPlay {
     }
 
     public String play(String instrument){
-        return instrument + " is being played. Bring bring";
+        return instrument + " is being played. ~Bring bring~";
     }
 }
