@@ -8,7 +8,7 @@ public class ViolinTest {
 
     @Before
     public void before(){
-        violin = new Violin("Stradivarius", "Alard", "4/4");
+        violin = new Violin("Stradivarius", "Alard", "Strings", "4/4");
     }
 
     @Test
@@ -19,6 +19,11 @@ public class ViolinTest {
     @Test
     public void hasModel(){
         assertEquals("Alard", violin.getModel());
+    }
+
+    @Test
+    public void hasOrchestralFamily(){
+        assertEquals("Strings", violin.getOrchestralFamily());
     }
 
     @Test

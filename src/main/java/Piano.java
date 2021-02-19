@@ -1,24 +1,13 @@
 import behaviours.IPlay;
 
-public class Piano implements IPlay {
-    private String make;
-    private String model;
+public class Piano extends Instrument implements IPlay {
     private String keyMaterial;
     private String size;
 
     public Piano(String make, String model, String keyMaterial, String size) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.keyMaterial = keyMaterial;
         this.size = size;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public String getKeyMaterial() {

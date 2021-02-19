@@ -1,26 +1,15 @@
 import behaviours.IPlay;
 
-public class Guitar implements IPlay {
-    private String make;
-    private String model;
+public class Guitar extends Instrument implements IPlay {
     private int numOfStrings;
     private double scaleLength;
     private String bodyShape;
 
     public Guitar(String make, String model, int numOfStrings, double scaleLength, String bodyShape) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.numOfStrings = numOfStrings;
         this.scaleLength = scaleLength;
         this.bodyShape = bodyShape;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public int getNumOfStrings() {

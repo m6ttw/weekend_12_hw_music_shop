@@ -3,8 +3,8 @@ import behaviours.IPlay;
 public class Trumpet extends OrchestralInstrument implements IPlay {
     private String key;
 
-    public Trumpet(String make, String model, String key){
-        super(make, model);
+    public Trumpet(String make, String model, String orchestralFamily, String key){
+        super(make, model, orchestralFamily);
         this.key = key;
     }
 

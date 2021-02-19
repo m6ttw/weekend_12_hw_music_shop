@@ -8,7 +8,7 @@ public class ClarinetTest {
 
     @Before
     public void before(){
-        clarinet = new Clarinet("Buffet Crampon", "R13", "Grenadilla", "Bb");
+        clarinet = new Clarinet("Buffet Crampon", "R13", "Grenadilla", "Woodwind", "Bb");
     }
 
     @Test
@@ -24,6 +24,11 @@ public class ClarinetTest {
     @Test
     public void hasTypeOfWood(){
         assertEquals("Grenadilla", clarinet.getTypeOfWood());
+    }
+
+    @Test
+    public void hasOrchestralFamily(){
+        assertEquals("Woodwind", clarinet.getOrchestralFamily());
     }
 
     @Test

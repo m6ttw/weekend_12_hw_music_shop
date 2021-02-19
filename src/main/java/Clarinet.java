@@ -4,8 +4,8 @@ public class Clarinet extends OrchestralInstrument implements IPlay {
     private String typeOfWood;
     private String key;
 
-    public Clarinet(String make, String model, String typeOfWood, String key) {
-        super(make, model);
+    public Clarinet(String make, String model, String typeOfWood, String orchestralFamily, String key) {
+        super(make, model, orchestralFamily);
         this.typeOfWood = typeOfWood;
         this.key = key;
     }

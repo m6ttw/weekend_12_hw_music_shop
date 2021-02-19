@@ -8,7 +8,7 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet = new Trumpet("Bach", "AB190S Professional", "Bb");
+        trumpet = new Trumpet("Bach", "AB190S Professional", "Brass", "Bb");
     }
 
     @Test
@@ -19,6 +19,11 @@ public class TrumpetTest {
     @Test
     public void hasModel(){
         assertEquals("AB190S Professional", trumpet.getModel());
+    }
+
+    @Test
+    public void hasOrchestralFamily(){
+        assertEquals("Brass", trumpet.getOrchestralFamily());
     }
 
     @Test

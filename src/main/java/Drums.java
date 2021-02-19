@@ -1,22 +1,11 @@
 import behaviours.IPlay;
 
-public class Drums implements IPlay {
-    private String make;
-    private String model;
+public class Drums extends Instrument implements IPlay {
     private int numOfPieces;
 
     public Drums(String make, String model, int numOfPieces) {
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.numOfPieces = numOfPieces;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public int getNumOfPieces() {

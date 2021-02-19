@@ -1,17 +1,12 @@
-public abstract class OrchestralInstrument {
-    private String make;
-    private String model;
+public abstract class OrchestralInstrument extends Instrument {
+    private String orchestralFamily;
 
-    public OrchestralInstrument(String make, String model) {
-        this.make = make;
-        this.model = model;
+    public OrchestralInstrument(String make, String model, String orchestralFamily) {
+        super(make, model);
+        this.orchestralFamily = orchestralFamily;
     }
 
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
+    public String getOrchestralFamily() {
+        return orchestralFamily;
     }
 }
