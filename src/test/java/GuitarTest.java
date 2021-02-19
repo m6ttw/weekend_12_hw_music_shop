@@ -30,7 +30,7 @@ public class GuitarTest {
     public void hasScaleLength(){
         assertEquals(25.5, guitar.getScaleLength(), 0.01);
     }
-    
+
     @Test
     public void hasBodyShape(){
         assertEquals("double cutaway", guitar.getBodyShape());
@@ -38,6 +38,6 @@ public class GuitarTest {
 
     @Test
     public void canPlay(){
-        assertEquals("Guitar is being played", guitar.play("Guitar"));
+        assertEquals("Guitar is being played. ~Bring bring~", guitar.play("Guitar"));
     }
 }
